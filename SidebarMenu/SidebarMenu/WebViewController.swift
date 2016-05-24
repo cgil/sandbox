@@ -22,7 +22,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
       }
       
-      let url = NSURL(string: "http://catnipsum.com/")
+      let url = NSURL(string: "192.168.1.122")
       let request = NSURLRequest(URL: url!)
       
       webView.delegate = self
