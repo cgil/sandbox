@@ -73,7 +73,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
       
       // Get the view controller
       
-      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Menu")
+      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Feed")
       
       // Swap out the Front view controller and display
       self.revealViewController().setFrontViewController(vcNew, animated: true)
