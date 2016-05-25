@@ -35,12 +35,17 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
     let config = WKWebViewConfiguration()
     config.userContentController = contentController
     
+    let navBarHeight = self.navigationController!.navigationBar.frame.size.height
+    let containerViewHeight = self.containerView.bounds.height
+    let containerViewWidth = self.containerView.bounds.width
+    let padding:CGFloat = 20
+    
     self.webView = WKWebView(
-      frame: self.containerView.bounds,
+      frame: CGRectMake(0, navBarHeight + padding, containerViewWidth, containerViewHeight - navBarHeight),
       configuration: config
     )
     self.webView!.navigationDelegate = self
-    self.view = self.webView
+    self.view.addSubview(self.webView!)
     
   }
   
@@ -53,7 +58,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
       view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
-    let url = NSURL(string: "http://192.168.1.25:8100")
+    let url = NSURL(string: "http://172.20.10.2:8100")
     let request = NSURLRequest(URL: url!)
     
     self.webView!.loadRequest(request)
