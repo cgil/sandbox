@@ -67,7 +67,7 @@
         <!--News-->
         <scene sceneID="3qE-8D-r7Z">
             <objects>
-                <tableViewController id="RaP-X2-i0v" customClass="NewsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="News" id="RaP-X2-i0v" customClass="NewsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="243" sectionHeaderHeight="22" sectionFooterHeight="22" id="Idv-M6-Zjl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="2577" y="-686"/>
         </scene>
-        <!--Menu Controller-->
+        <!--Main-->
         <scene sceneID="WvI-gM-KFV">
             <objects>
-                <tableViewController id="c8U-hf-vWv" customClass="MenuController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Menu" title="Main" id="c8U-hf-vWv" customClass="MenuController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="haP-s8-5Sh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,26 +381,14 @@
                     <view key="view" contentMode="scaleToFill" id="cQi-gq-Wpi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJ0-3j-EL4">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gJ0-3j-EL4" secondAttribute="trailing" id="W9j-3y-HIw"/>
-                            <constraint firstItem="gJ0-3j-EL4" firstAttribute="leading" secondItem="cQi-gq-Wpi" secondAttribute="leading" id="c4C-1B-OEv"/>
-                            <constraint firstItem="S59-vg-f0F" firstAttribute="top" secondItem="gJ0-3j-EL4" secondAttribute="bottom" id="dBY-6j-LFJ"/>
-                            <constraint firstItem="gJ0-3j-EL4" firstAttribute="top" secondItem="Frz-Lw-qfV" secondAttribute="bottom" id="efC-XP-wNt"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tote Store" id="CjA-NP-McZ">
                         <barButtonItem key="leftBarButtonItem" image="menu" style="done" id="xsF-fK-ikK"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="containerView" destination="cQi-gq-Wpi" id="eqN-ra-EPt"/>
                         <outlet property="menuButton" destination="xsF-fK-ikK" id="Rc2-vC-tma"/>
-                        <outlet property="webView" destination="gJ0-3j-EL4" id="hhu-XK-iV6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3V-a7-gDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
