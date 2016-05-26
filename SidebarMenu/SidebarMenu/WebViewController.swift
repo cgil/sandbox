@@ -73,12 +73,20 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
       
       // Get the view controller
       
-      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Feed")
+      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Feed Navigation Controller")
       
       // Swap out the Front view controller and display
       self.revealViewController().setFrontViewController(vcNew, animated: true)
       self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
-
+//
+//      UINavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+//      MBFancyViewController *viewController = navigationController.viewControllers[0];
+//      
+//      // setup "inner" view controller
+//      viewController.foo = bar;
+//      
+//      [self presentViewController:navigationController animated:YES completion:nil];
+      
     }
   }
   
