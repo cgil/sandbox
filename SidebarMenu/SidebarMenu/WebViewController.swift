@@ -19,32 +19,27 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
   override func loadView() {
     super.loadView()
     
+    // ContentController class rovides a way for JavaScript to post messages and inject user scripts to a web view.
     let contentController = WKUserContentController()
-    let userScript = WKUserScript(
-      source: "redHeader()",
-      injectionTime: WKUserScriptInjectionTime.AtDocumentStart,
-      forMainFrameOnly: true
-    )
-    contentController.addUserScript(userScript)
-    
     contentController.addScriptMessageHandler(
       self,
       name: "callbackHandler"
     )
     
+    // WKWebViewConfiguration is a collection of properties with which to initialize a web view.
     let config = WKWebViewConfiguration()
     config.userContentController = contentController
     
-    let navBarHeight = self.navigationController!.navigationBar.frame.size.height
-    let containerViewHeight = self.containerView.bounds.height
-    let containerViewWidth = self.containerView.bounds.width
-    let padding:CGFloat = 20
-    
+    // Instantiate WKWebView with specified bounds.
     self.webView = WKWebView(
-      frame: CGRectMake(0, navBarHeight + padding, containerViewWidth, containerViewHeight - navBarHeight),
+      frame: self.containerView.bounds,
       configuration: config
     )
+    
+    // Navigation Delegate provides methods for tracking the progress of main frame navigations and for deciding load policy for main frame and subframe navigations.
     self.webView!.navigationDelegate = self
+    
+    // Render WKWebView to view.
     self.view.addSubview(self.webView!)
     
   }
@@ -52,18 +47,18 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
+    // RevealViewController Library calls control swipe menu gestures.
     if revealViewController() != nil {
       menuButton.target = revealViewController()
       menuButton.action = "revealToggle:"
       view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
+    // Load URL.
     let url = NSURL(string: "http://172.20.10.2:8100")
     let request = NSURLRequest(URL: url!)
-    
     self.webView!.loadRequest(request)
-    
-    automaticallyAdjustsScrollViewInsets = false
     
   }
   
@@ -78,25 +73,9 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
       // Swap out the Front view controller and display
       self.revealViewController().setFrontViewController(vcNew, animated: true)
       self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
-//
-//      UINavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
-//      MBFancyViewController *viewController = navigationController.viewControllers[0];
-//      
-//      // setup "inner" view controller
-//      viewController.foo = bar;
-//      
-//      [self presentViewController:navigationController animated:YES completion:nil];
       
     }
   }
-  
-//    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage)
-//    {
-//      if(message.name == "callbackHandler") {
-//        print("Launch my Native Camera")
-//      }
-//    }
-  
   
   /*
   // MARK: - Navigation
