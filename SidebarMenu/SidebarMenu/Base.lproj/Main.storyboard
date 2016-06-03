@@ -64,7 +64,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWv-wQ-DZa">
                                             <rect key="frame" x="10" y="145" width="580" height="50"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.29019607843137252" green="0.30196078431372547" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nSz-6P-XDx">
@@ -76,7 +76,7 @@
                                                 <constraint firstAttribute="width" constant="78" id="t5u-vj-MTo"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKZ-BL-0Ch">
@@ -86,7 +86,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="i67-9J-UhV"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -297,7 +297,7 @@
         <!--Navigation Controller-->
         <scene sceneID="a23-LC-1XJ">
             <objects>
-                <navigationController storyboardIdentifier="Feed Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="dXH-rC-dKS" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavController" automaticallyAdjustsScrollViewInsets="NO" id="dXH-rC-dKS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WmJ-Ml-X7j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -345,7 +345,7 @@
         <!--Tote Store-->
         <scene sceneID="9t7-EW-ayt">
             <objects>
-                <viewController id="kIa-Na-bhx" customClass="WebViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewVC" id="kIa-Na-bhx" customClass="WebViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Frz-Lw-qfV"/>
                         <viewControllerLayoutGuide type="bottom" id="S59-vg-f0F"/>
@@ -385,7 +385,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UOr-6L-fJT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rl1-iA-p94" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="WebViewNavController" automaticallyAdjustsScrollViewInsets="NO" id="Rl1-iA-p94" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jo8-XP-DeD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

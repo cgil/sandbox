@@ -11,9 +11,9 @@ import WebKit
 
 class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
   
-  @IBOutlet weak var menuButton:UIBarButtonItem!
   @IBOutlet var containerView: UIView!
   
+  var urlString: String?
   var webView: WKWebView?
   
   override func loadView() {
@@ -47,7 +47,6 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
     // SWReveal powers swipe gestures.
     if revealViewController() != nil {
       // Add Menu Button and link to SWReveal Library.
@@ -60,7 +59,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
     }
 
     // Load URL.
-    let url = NSURL(string: "http://172.20.10.2:8100")
+    let url = NSURL(string: urlString ?? "https://clutch-store.herokuapp.com/")
     let request = NSURLRequest(URL: url!)
     self.webView!.loadRequest(request)
     
@@ -72,7 +71,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
       
       // Get the view controller
       
-      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Feed Navigation Controller")
+      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FeedNavController")
       
       // Swap out the Front view controller and display
       self.revealViewController().setFrontViewController(vcNew, animated: true)

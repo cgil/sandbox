@@ -9,7 +9,6 @@
 import UIKit
 
 class PhotoViewController: UIViewController {
-    @IBOutlet weak var menuButton:UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
