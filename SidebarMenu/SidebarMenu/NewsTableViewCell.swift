@@ -2,8 +2,8 @@
 //  NewsTableViewCell.swift
 //  SidebarMenu
 //
-//  Created by Simon Ng on 2/2/15.
-//  Copyright (c) 2015 AppCoda. All rights reserved.
+//  Created by Andy Miller on 5/23/16.
+//  Copyright © 2016 Tote. All rights reserved.
 //
 
 import UIKit
