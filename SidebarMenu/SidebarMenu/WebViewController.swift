@@ -56,6 +56,9 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
       button.frame = CGRectMake(0, 0, 22.6, 17.3)
       let barButton = UIBarButtonItem(customView: button)
       self.navigationItem.leftBarButtonItem = barButton
+      
+      // Reveal menu on swipe.
+      view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 
     // Load URL.
