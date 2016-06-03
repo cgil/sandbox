@@ -23,15 +23,13 @@ class PhotoViewController: UIViewController, BRYXBannerDelegate {
       let barButton = UIBarButtonItem(customView: button)
       self.navigationItem.leftBarButtonItem = barButton
       
-      // Reveal menu on swipe.
-      view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     // Load Banner.
     let banner = Banner(title: "We think you'll like this deal", subtitle: "Because we do...", image: UIImage(named: "tote_outline"), backgroundColor: UIColor(red:217.00/255.0, green:88.0/255.0, blue:87.0/255.0, alpha:1.000))
     banner.dismissesOnTap = false
-    banner.dismissesOnSwipe = true 
-    banner.show(duration: 5.0)
+    banner.dismissesOnSwipe = true
+    banner.show(duration: 4.0)
     banner.delegate = self
     
   }
@@ -45,16 +43,5 @@ class PhotoViewController: UIViewController, BRYXBannerDelegate {
     
     self.navigationController!.pushViewController(vc, animated: true)
   }
-  
-  
-  /*
-  // MARK: - Navigation
-  
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
-  }
-  */
   
 }
