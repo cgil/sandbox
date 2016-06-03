@@ -148,13 +148,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MENU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfj-8I-3Bb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfj-8I-3Bb">
                                                     <rect key="frame" x="19" y="8" width="119" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="119" id="RTG-VG-CpX"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="28"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kfj-8I-3Bb" firstAttribute="leading" secondItem="mav-NV-Wjh" secondAttribute="leadingMargin" constant="11" id="Q7O-xQ-cUP"/>
+                                                <constraint firstItem="Kfj-8I-3Bb" firstAttribute="top" secondItem="mav-NV-Wjh" secondAttribute="topMargin" id="XuJ-wJ-xhT"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kfj-8I-3Bb" secondAttribute="bottom" id="cf5-Zp-x27"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.29019607843137252" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
