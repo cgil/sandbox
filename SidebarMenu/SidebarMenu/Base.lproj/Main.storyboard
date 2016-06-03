@@ -165,16 +165,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="4sI-me-joh">
-                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-5S-TMf">
-                                                    <rect key="frame" x="61" y="11" width="73" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh3-5S-TMf">
+                                                    <rect key="frame" x="61" y="11" width="73" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="73" id="Drb-at-BpR"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_light" translatesAutoresizingMaskIntoConstraints="NO" id="4sI-me-joh">
+                                                    <rect key="frame" x="21" y="12" width="27" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="EQ0-jV-r74"/>
+                                                        <constraint firstAttribute="width" constant="27" id="i0s-wI-ffk"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gh3-5S-TMf" firstAttribute="leading" secondItem="4sI-me-joh" secondAttribute="trailing" constant="13" id="CrJ-8d-NpU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="gh3-5S-TMf" secondAttribute="bottom" constant="-2" id="Hfe-HS-RxM"/>
+                                                <constraint firstItem="4sI-me-joh" firstAttribute="centerY" secondItem="2Mc-1j-0ud" secondAttribute="centerY" id="Rd7-4z-cQb"/>
+                                                <constraint firstItem="4sI-me-joh" firstAttribute="leading" secondItem="2Mc-1j-0ud" secondAttribute="leadingMargin" constant="13" id="aM8-gU-uUN"/>
+                                                <constraint firstItem="gh3-5S-TMf" firstAttribute="top" secondItem="2Mc-1j-0ud" secondAttribute="topMargin" constant="3" id="f5W-A0-y5Q"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.29019607843137252" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -188,16 +202,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-kf-FuS">
-                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it0-69-JpN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it0-69-JpN">
                                                     <rect key="frame" x="61" y="6" width="96" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="96" id="rCe-vF-7at"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galery" translatesAutoresizingMaskIntoConstraints="NO" id="bQu-kf-FuS">
+                                                    <rect key="frame" x="21" y="10" width="27" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="D41-Vw-SbE"/>
+                                                        <constraint firstAttribute="width" constant="27" id="TqB-Im-ITD"/>
+                                                        <constraint firstAttribute="height" constant="24" id="VZV-HP-F7n"/>
+                                                        <constraint firstAttribute="height" constant="20" id="bOH-1j-V1I"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="D41-Vw-SbE"/>
+                                                            <exclude reference="bOH-1j-V1I"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="it0-69-JpN" firstAttribute="leading" secondItem="bQu-kf-FuS" secondAttribute="trailing" constant="13" id="9YQ-PS-uke"/>
+                                                <constraint firstItem="it0-69-JpN" firstAttribute="top" secondItem="T53-k8-WHP" secondAttribute="topMargin" constant="-2" id="Qb7-Wi-7c7"/>
+                                                <constraint firstItem="it0-69-JpN" firstAttribute="centerY" secondItem="T53-k8-WHP" secondAttribute="centerY" id="a5e-L7-XJP"/>
+                                                <constraint firstItem="bQu-kf-FuS" firstAttribute="centerY" secondItem="it0-69-JpN" secondAttribute="centerY" id="oAJ-G2-u0N"/>
+                                                <constraint firstItem="bQu-kf-FuS" firstAttribute="leading" secondItem="T53-k8-WHP" secondAttribute="leadingMargin" constant="13" id="oSh-1f-bWB"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.29019607843137252" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -211,16 +247,30 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tote" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-Hl-9CE">
-                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjr-60-3dH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjr-60-3dH">
                                                     <rect key="frame" x="61" y="6" width="85" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="85" id="UGT-uf-0Qh"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tote" translatesAutoresizingMaskIntoConstraints="NO" id="pSc-Hl-9CE">
+                                                    <rect key="frame" x="20" y="8" width="27" height="27"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="27" id="2v8-pW-mFE"/>
+                                                        <constraint firstAttribute="height" constant="27" id="zD9-eg-QNl"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bjr-60-3dH" firstAttribute="top" secondItem="kua-cq-pMg" secondAttribute="topMargin" constant="-2" id="ZrY-c7-mtb"/>
+                                                <constraint firstItem="bjr-60-3dH" firstAttribute="centerY" secondItem="pSc-Hl-9CE" secondAttribute="centerY" id="aYJ-y9-x4r"/>
+                                                <constraint firstItem="bjr-60-3dH" firstAttribute="leading" secondItem="pSc-Hl-9CE" secondAttribute="trailing" constant="14" id="cAN-Zm-QhS"/>
+                                                <constraint firstItem="pSc-Hl-9CE" firstAttribute="top" secondItem="kua-cq-pMg" secondAttribute="topMargin" id="dzZ-b0-d5M"/>
+                                                <constraint firstItem="pSc-Hl-9CE" firstAttribute="leading" secondItem="kua-cq-pMg" secondAttribute="leadingMargin" constant="12" id="xMq-jE-kQN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.15294117647058825" green="0.29019607843137252" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -352,10 +402,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="galery" width="60" height="52"/>
         <image name="japanvillage" width="1800" height="1350"/>
-        <image name="news" width="1024" height="1024"/>
-        <image name="photo" width="1024" height="1024"/>
-        <image name="tote" width="1024" height="1024"/>
+        <image name="menu_light" width="64" height="49"/>
+        <image name="tote" width="601" height="601"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="foL-zu-uHU"/>
