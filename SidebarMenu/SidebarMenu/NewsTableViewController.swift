@@ -13,7 +13,7 @@ class NewsTableViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // SWReveal powers swipe gestures.
+    // Menu button.
     if revealViewController() != nil {
       // Add Menu Button and link to SWReveal Library.
       let button: UIButton = UIButton(type: UIButtonType.Custom)
@@ -49,7 +49,7 @@ class NewsTableViewController: UITableViewController {
       
     } else if indexPath.row == 1 {
       cell.postImageView.image = UIImage(named: "coffee_table_aquarium")
-      cell.postTitleLabel.text = "We love this aquarium here at Demo App"
+      cell.postTitleLabel.text = "We at 'Demo App' love this aquarium. Click to Buy."
       cell.authorLabel.text = "App Name"
       cell.authorImageView.image = UIImage(named: "tote")
       

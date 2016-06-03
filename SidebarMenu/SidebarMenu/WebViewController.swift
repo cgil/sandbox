@@ -47,7 +47,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // SWReveal powers swipe gestures.
+    // Menu button.
     if revealViewController() != nil {
       // Add Menu Button and link to SWReveal Library.
       let button: UIButton = UIButton(type: UIButtonType.Custom)

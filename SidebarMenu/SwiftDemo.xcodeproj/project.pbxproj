@@ -27,6 +27,7 @@
 		EB13831B1D00E1C5005A6347 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB1383071D00E1C5005A6347 /* Lato-ThinItalic.ttf */; };
 		EB13831C1D00E1C5005A6347 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB1383081D00E1C5005A6347 /* OFL.txt */; };
 		EB13831D1D00E1C5005A6347 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = EB1383091D00E1C5005A6347 /* README.txt */; };
+		EB1383221D022D8C005A6347 /* BRYXBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1383211D022D8C005A6347 /* BRYXBanner.swift */; };
 		EB9B43DE1CF41B220073C46F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B43DD1CF41B220073C46F /* WebViewController.swift */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		EB1383071D00E1C5005A6347 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		EB1383081D00E1C5005A6347 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		EB1383091D00E1C5005A6347 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		EB1383211D022D8C005A6347 /* BRYXBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRYXBanner.swift; sourceTree = "<group>"; };
 		EB9B43DD1CF41B220073C46F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			name = "Lato Font";
 			sourceTree = "<group>";
 		};
+		EB1383201D022D71005A6347 /* BRYX Banner */ = {
+			isa = PBXGroup;
+			children = (
+				EB1383211D022D8C005A6347 /* BRYXBanner.swift */,
+			);
+			name = "BRYX Banner";
+			sourceTree = "<group>";
+		};
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 		F47029F21A7F27DB00E30A3C /* SidebarMenu */ = {
 			isa = PBXGroup;
 			children = (
+				EB1383201D022D71005A6347 /* BRYX Banner */,
 				F4D750141BD38E56009E1003 /* SWRevealViewController */,
 				F47029F51A7F27DB00E30A3C /* AppDelegate.swift */,
 				F47029F91A7F27DB00E30A3C /* Main.storyboard */,
@@ -343,6 +354,7 @@
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
+				EB1383221D022D8C005A6347 /* BRYXBanner.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

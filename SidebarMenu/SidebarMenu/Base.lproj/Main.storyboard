@@ -324,7 +324,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanvillage" translatesAutoresizingMaskIntoConstraints="NO" id="IL0-tN-Stk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dive" translatesAutoresizingMaskIntoConstraints="NO" id="IL0-tN-Stk">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
@@ -402,8 +402,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dive" width="1000" height="667"/>
         <image name="galery" width="60" height="52"/>
-        <image name="japanvillage" width="1800" height="1350"/>
         <image name="menu_light" width="64" height="49"/>
         <image name="tote" width="601" height="601"/>
     </resources>
