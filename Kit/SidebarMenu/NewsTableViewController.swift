@@ -1,6 +1,6 @@
 //
 //  NewsTableViewController.swift
-//  SidebarMenu
+//  Kit
 //
 //  Created by Andy Miller on 5/23/16.
 //  Copyright © 2016 Tote. All rights reserved.
@@ -74,7 +74,7 @@ class NewsTableViewController: UITableViewController {
       let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("WebViewVC") as! WebViewController
       
       // URL pointing to single item store.
-      vc.urlString = "https://clutch-store.herokuapp.com/"
+      vc.urlString = "https://clutch-store.herokuapp.com/#/e5be72f7-5ded-44b0-b2bb-a63fe0fbcff3"
       
       self.navigationController!.pushViewController(vc, animated: true)
       

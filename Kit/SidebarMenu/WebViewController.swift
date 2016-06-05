@@ -1,6 +1,6 @@
 //
 //  WebViewController.swift
-//  SidebarMenu
+//  Kit
 //
 //  Created by Andy Miller on 5/23/16.
 //  Copyright © 2016 Tote. All rights reserved.
@@ -62,7 +62,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
     }
 
     // Load URL.
-    let url = NSURL(string: urlString ?? "https://clutch-store.herokuapp.com/")
+    let url = NSURL(string: urlString ?? "https://clutch-store.herokuapp.com/#/e5be72f7-5ded-44b0-b2bb-a63fe0fbcff3")
     let request = NSURLRequest(URL: url!)
     self.webView!.loadRequest(request)
     

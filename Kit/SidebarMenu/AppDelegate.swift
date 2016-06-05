@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SidebarMenu
+//  Kit
 //
-//  //  Created by Andy Miller on 5/23/16.
+//  Created by Andy Miller on 5/23/16.
 //  Copyright © 2016 Tote. All rights reserved.
 //  Based on tutorial by Simon Ng on 2/2/15
 //  Copyright (c) 2015 AppCoda. All rights reserved.
