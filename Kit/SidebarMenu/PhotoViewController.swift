@@ -39,7 +39,7 @@ class PhotoViewController: UIViewController, BRYXBannerDelegate {
     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("WebViewVC") as! WebViewController
     
     // URL pointing to single item store.
-    vc.urlString = "https://clutch-store.herokuapp.com/#/e5be72f7-5ded-44b0-b2bb-a63fe0fbcff3"
+    vc.urlString = "https://clutch-store.herokuapp.com/#/c88e8a61-902f-4bd3-b175-3f7373c71a6e"
     
     self.navigationController!.pushViewController(vc, animated: true)
   }

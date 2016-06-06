@@ -62,7 +62,7 @@ class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationD
     }
 
     // Load URL.
-    let url = NSURL(string: urlString ?? "https://clutch-store.herokuapp.com/#/e5be72f7-5ded-44b0-b2bb-a63fe0fbcff3")
+    let url = NSURL(string: urlString ?? "https://clutch-store.herokuapp.com/#/68a4f1da-a6ca-4ae3-b0e8-bef07ce2f429")
     let request = NSURLRequest(URL: url!)
     self.webView!.loadRequest(request)
     
