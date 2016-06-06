@@ -51,8 +51,8 @@ class NewsTableViewController: UITableViewController {
       cell.authorImageView.image = UIImage(named: "userpic")
       
     } else if indexPath.row == 1 {
-      cell.postImageView.image = UIImage(named: "coffee_table_aquarium")
-      cell.postTitleLabel.text = "We at 'Demo App' love this aquarium. Click to Buy."
+      cell.postImageView.image = UIImage(named: "ecoaquarium")
+      cell.postTitleLabel.text = "Self contained biospheres make great aquariums! Click to buy."
       cell.authorLabel.text = "App Name"
       cell.authorImageView.image = UIImage(named: "tote")
       
