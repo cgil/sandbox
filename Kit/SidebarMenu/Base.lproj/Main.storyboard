@@ -350,7 +350,7 @@
             </objects>
             <point key="canvasLocation" x="2577" y="780"/>
         </scene>
-        <!--Tote Store-->
+        <!--Kit's Store-->
         <scene sceneID="9t7-EW-ayt">
             <objects>
                 <viewController storyboardIdentifier="WebViewVC" id="kIa-Na-bhx" customClass="WebViewController" customModule="Kit" customModuleProvider="target" sceneMemberID="viewController">
@@ -363,7 +363,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tote Store" id="CjA-NP-McZ"/>
+                    <navigationItem key="navigationItem" title="Kit's Store" id="CjA-NP-McZ"/>
                     <connections>
                         <outlet property="containerView" destination="cQi-gq-Wpi" id="eqN-ra-EPt"/>
                     </connections>
