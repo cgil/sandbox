@@ -28,7 +28,7 @@ class PhotoViewController: UIViewController, BRYXBannerDelegate {
     }
     
     // Load Banner.
-    let banner = Banner(title: "We think you'll like this deal", subtitle: "Because we do...", image: UIImage(named: "tote_outline"), backgroundColor: UIColor(red:217.00/255.0, green:88.0/255.0, blue:87.0/255.0, alpha:1.000))
+    let banner = Banner(title: "We think you'll like this deal", subtitle: "Because we do...", image: UIImage(named: "tote_outline"), backgroundColor: UIColor(red:100.00/255.0, green:190.0/255.0, blue:224.0/255.0, alpha:1.000))
     banner.dismissesOnTap = false
     banner.dismissesOnSwipe = true
     banner.show(duration: 4.0)
