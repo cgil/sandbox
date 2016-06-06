@@ -23,6 +23,8 @@ class PhotoViewController: UIViewController, BRYXBannerDelegate {
       let barButton = UIBarButtonItem(customView: button)
       self.navigationItem.leftBarButtonItem = barButton
       
+      view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+      
     }
     
     // Load Banner.

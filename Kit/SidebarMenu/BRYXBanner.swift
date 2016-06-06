@@ -213,9 +213,18 @@ public class Banner: UIView {
   
   private func addGestureRecognizers() {
     addGestureRecognizer(UITapGestureRecognizer(target: self, action: "didTap:"))
-    let swipe = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
-    swipe.direction = .Up
-    addGestureRecognizer(swipe)
+    
+    let swipeUp = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
+    swipeUp.direction = .Up
+    addGestureRecognizer(swipeUp)
+    
+    let swipeRight = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
+    swipeRight.direction = .Right
+    addGestureRecognizer(swipeRight)
+    
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
+    swipeLeft.direction = .Left
+    addGestureRecognizer(swipeLeft)
   }
   
   private func resetTintColor() {
