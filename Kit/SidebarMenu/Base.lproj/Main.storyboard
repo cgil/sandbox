@@ -413,7 +413,7 @@
         <image name="dive" width="1000" height="667"/>
         <image name="galery" width="60" height="52"/>
         <image name="menu_light" width="64" height="49"/>
-        <image name="tote" width="35" height="35"/>
+        <image name="tote" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="foL-zu-uHU"/>

@@ -53,8 +53,8 @@ class NewsTableViewController: UITableViewController {
     } else if indexPath.row == 1 {
       cell.postImageView.image = UIImage(named: "ecoaquarium")
       cell.postTitleLabel.text = "Self contained biospheres make great aquariums! Click to buy."
-      cell.authorLabel.text = "App Name"
-      cell.authorImageView.image = UIImage(named: "tote")
+      cell.authorLabel.text = "Kit"
+      cell.authorImageView.image = UIImage(named: "Kit")
       
     } else {
       cell.postImageView.image = UIImage(named: "whaleshark")
