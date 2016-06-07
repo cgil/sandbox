@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6381B171D06935600B15995 /* EVURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6381B151D06935600B15995 /* EVURLCache.swift */; };
+		C6381B181D06935600B15995 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6381B161D06935600B15995 /* Reachability.swift */; };
+		C6381B1A1D07691D00B15995 /* PreCache in Resources */ = {isa = PBXBuildFile; fileRef = C6381B191D07691D00B15995 /* PreCache */; };
 		EB13830A1D00E1C5005A6347 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB1382F61D00E1C5005A6347 /* Lato-Black.ttf */; };
 		EB13830B1D00E1C5005A6347 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB1382F71D00E1C5005A6347 /* Lato-BlackItalic.ttf */; };
 		EB13830C1D00E1C5005A6347 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB1382F81D00E1C5005A6347 /* Lato-Bold.ttf */; };
@@ -53,6 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6381B151D06935600B15995 /* EVURLCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EVURLCache.swift; sourceTree = "<group>"; };
+		C6381B161D06935600B15995 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		C6381B191D07691D00B15995 /* PreCache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PreCache; sourceTree = "<group>"; };
 		EB1382F61D00E1C5005A6347 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		EB1382F71D00E1C5005A6347 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
 		EB1382F81D00E1C5005A6347 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
@@ -149,6 +155,8 @@
 		EB1383231D04AB12005A6347 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				C6381B151D06935600B15995 /* EVURLCache.swift */,
+				C6381B161D06935600B15995 /* Reachability.swift */,
 				EB1383201D022D71005A6347 /* BRYX Banner */,
 				F4D750141BD38E56009E1003 /* SWRevealViewController */,
 			);
@@ -158,6 +166,7 @@
 		F47029E71A7F27DB00E30A3C = {
 			isa = PBXGroup;
 			children = (
+				C6381B191D07691D00B15995 /* PreCache */,
 				F4702A151A7F342F00E30A3C /* MapKit.framework */,
 				F47029F21A7F27DB00E30A3C /* KitMenu */,
 				F4702A081A7F27DC00E30A3C /* KitTests */,
@@ -321,6 +330,7 @@
 				EB1383101D00E1C5005A6347 /* Lato-Heavy.ttf in Resources */,
 				EB13831B1D00E1C5005A6347 /* Lato-ThinItalic.ttf in Resources */,
 				EB1383131D00E1C5005A6347 /* Lato-Light.ttf in Resources */,
+				C6381B1A1D07691D00B15995 /* PreCache in Resources */,
 				EB13830A1D00E1C5005A6347 /* Lato-Black.ttf in Resources */,
 				EB13830C1D00E1C5005A6347 /* Lato-Bold.ttf in Resources */,
 				F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */,
@@ -362,9 +372,11 @@
 				EB9B43DE1CF41B220073C46F /* WebViewController.swift in Sources */,
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
+				C6381B171D06935600B15995 /* EVURLCache.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				EB1383221D022D8C005A6347 /* BRYXBanner.swift in Sources */,
+				C6381B181D06935600B15995 /* Reachability.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
