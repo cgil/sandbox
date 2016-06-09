@@ -7,21 +7,39 @@
 //
 
 import UIKit
+import WebKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
   
   @IBOutlet var containerView: UIView!
   
   var urlString: String?
-  var webView: UIWebView?
+  var webView: WKWebView?
   
   override func loadView() {
     super.loadView()
     
-    // Instantiate UIWebView with specified bounds.
-    self.webView = UIWebView(frame: self.containerView.bounds)
+    // ContentController class rovides a way for JavaScript to post messages and inject user scripts to a web view.
+    let contentController = WKUserContentController()
+    contentController.addScriptMessageHandler(
+      self,
+      name: "callbackHandler"
+    )
     
-    // Render UIWebView to view.
+    // WKWebViewConfiguration is a collection of properties with which to initialize a web view.
+    let config = WKWebViewConfiguration()
+    config.userContentController = contentController
+    
+    // Instantiate WKWebView with specified bounds.
+    self.webView = WKWebView(
+      frame: self.containerView.bounds,
+      configuration: config
+    )
+    
+    // Navigation Delegate provides methods for tracking the progress of main frame navigations and for deciding load policy for main frame and subframe navigations.
+    self.webView!.navigationDelegate = self
+    
+    // Render WKWebView to view.
     self.view.addSubview(self.webView!)
     
   }
@@ -34,7 +52,7 @@ class WebViewController: UIViewController {
       // Add Menu Button and link to SWReveal Library.
       let button: UIButton = UIButton(type: UIButtonType.Custom)
       button.setImage(UIImage(named: "menu.png"), forState: UIControlState.Normal)
-      button.addTarget(revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+      button.addTarget(revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
       button.frame = CGRectMake(0, 0, 22.6, 17.3)
       let barButton = UIBarButtonItem(customView: button)
       self.navigationItem.leftBarButtonItem = barButton
@@ -48,6 +66,21 @@ class WebViewController: UIViewController {
     let request = NSURLRequest(URL: url!)
     self.webView!.loadRequest(request)
     
+  }
+  
+  func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
+    if(message.name == "callbackHandler") {
+      print("JavaScript is sending a message \(message.body)")
+      
+      // Get the view controller
+      
+      let vcNew = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("FeedNavController")
+      
+      // Swap out the Front view controller and display
+      self.revealViewController().setFrontViewController(vcNew, animated: true)
+      self.revealViewController().setFrontViewPosition(FrontViewPosition.Left, animated: true)
+      
+    }
   }
   
 }

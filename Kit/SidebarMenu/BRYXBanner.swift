@@ -212,17 +212,17 @@ public class Banner: UIView {
   }
   
   private func addGestureRecognizers() {
-    addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(Banner.didTap(_:))))
+    addGestureRecognizer(UITapGestureRecognizer(target: self, action: "didTap:"))
     
-    let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(Banner.didSwipe(_:)))
+    let swipeUp = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
     swipeUp.direction = .Up
     addGestureRecognizer(swipeUp)
     
-    let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(Banner.didSwipe(_:)))
+    let swipeRight = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
     swipeRight.direction = .Right
     addGestureRecognizer(swipeRight)
     
-    let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(Banner.didSwipe(_:)))
+    let swipeLeft = UISwipeGestureRecognizer(target: self, action: "didSwipe:")
     swipeLeft.direction = .Left
     addGestureRecognizer(swipeLeft)
   }
