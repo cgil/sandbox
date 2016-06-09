@@ -22,5 +22,5 @@ Given that your store id is STORE_ID, with products PRODUCT1_ID and PRODUCT2_ID;
 https://clutch.totestore.com/#/STORE_ID/?filter[product]=PRODUCT1_ID,PRODUCT2_ID
 
 
-# DEV SUPPORT
+## DEV SUPPORT
 dev@totestore.com
