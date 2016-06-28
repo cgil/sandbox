@@ -11,7 +11,7 @@ Included are examples of:
   * A header banner
   * A product embedded in a news feed
 
-<img src="" alt="Kit app" width="350px">
+<img src="https://raw.githubusercontent.com/cgil/tote-sandbox/master/Kit/assets/kit-preview.png" alt="Kit app" width="350px">
 
 Use one of our example stores or create your own.
 In the following examples clutch is the subdomain housing our collection of stores.
