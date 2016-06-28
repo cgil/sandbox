@@ -11,16 +11,14 @@ Included are examples of:
   * A header banner
   * A product embedded in a news feed
 
+<img src="" alt="Kit app" width="350px">
+
 Use one of our example stores or create your own.
 In the following examples clutch is the subdomain housing our collection of stores.
 
 Given that your store id is STORE_ID
-Your embedded store url will be https://clutch.totestore/com/#/STORE_ID
+Your embedded store url will be https://CLUTCH_HOST/#/STORE_ID
 
 If you wish to only show a filtered set of products from your store, we allow product filtering.
 Given that your store id is STORE_ID, with products PRODUCT1_ID and PRODUCT2_ID; your embedded store url will be:
-https://clutch.totestore.com/#/STORE_ID/?filter[product]=PRODUCT1_ID,PRODUCT2_ID
-
-
-## DEV SUPPORT
-dev@totestore.com
+https://CLUTCH_HOST/#/STORE_ID/?filter[product]=PRODUCT1_ID,PRODUCT2_ID
